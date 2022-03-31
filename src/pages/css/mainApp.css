@@ -1,0 +1,23 @@
+.main-app {
+  color: #ffff;
+  font-size: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-wrapper {
+  font-size: 10rem;
+}
+
+.greeting-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.weather-wrapper {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}

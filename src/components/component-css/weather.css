@@ -1,0 +1,10 @@
+.weather-wrapper {
+  font-size: 2rem;
+  text-align: right;
+}
+
+.temp-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
