@@ -14,6 +14,12 @@ Features :
 - Add your main focus of the day.
 - TODO : Publish on chrome webstore
 
+## Try out the extension without installing locally
+
+Want to have personalized New Tab experience without installing the extension?
+
+It's simple, just [click here](https://cobra-chrome-extension.netlify.app/)
+
 ## Instruction to run the app locally
 
 This extension will be available on chrome web store in a while.
