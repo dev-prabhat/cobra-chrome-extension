@@ -19,7 +19,7 @@ export const Weather = () => {
     () =>
       coordinates.latitude !== 0 &&
       fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.latitude}&lon=${coordinates.longitude}&APPID=${process.env.REACT_APP_COBRA_API_KEY}`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.latitude}&lon=${coordinates.longitude}&APPID=${process.env.REACT_APP_OPENWEATHER_API_KEY}`
       )
         .then((res) => res.json())
         .then((x) =>

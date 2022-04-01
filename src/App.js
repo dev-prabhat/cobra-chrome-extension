@@ -1,15 +1,18 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useGlobal } from "./context/global-context";
 import { MainApp, Welcome } from "./pages";
 
-const randomImage = () => {
-  //FOR FUTURE USE: More images will be added later
-  // const randomNum = Math.floor(Math.random() * 10);
-  return process.env.PUBLIC_URL + `/images/${1}.jpg`;
-};
-
 function App() {
   const { name, setName, setMainFocus } = useGlobal();
+
+  const [imageUrl, setImageUrl] = useState();
+  useEffect(() => {
+    fetch(
+      `https://api.unsplash.com/photos/random/?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}&&orientation=landscape&&query=mountains%20dark`
+    )
+      .then((res) => res.json())
+      .then((x) => setImageUrl(x.urls.regular));
+  }, []);
 
   useEffect(() => {
     setName(localStorage.getItem("username"));
@@ -25,11 +28,11 @@ function App() {
     <div
       className="wh-100"
       style={{
-        backgroundImage: `url(${randomImage()})`,
+        backgroundImage: `url(${imageUrl})`,
         backgroundSize: "cover",
       }}
     >
-      {name === null ? <Welcome /> : <MainApp />}
+      {name ? <MainApp /> : <Welcome />}
     </div>
   );
 }

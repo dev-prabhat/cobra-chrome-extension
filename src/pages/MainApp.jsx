@@ -3,7 +3,7 @@ import { Clock, Greeting, Quotes, Weather } from "../components";
 import { useGlobal } from "../context/global-context";
 
 export const MainApp = () => {
-  const { name, mainFocus, setMainFocus } = useGlobal();
+  const { name, setName, mainFocus, setMainFocus } = useGlobal();
 
   const focusHandler = (e) => {
     localStorage.setItem(
@@ -13,6 +13,16 @@ export const MainApp = () => {
     setMainFocus(
       e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1)
     );
+  };
+
+  const handleEditName = () => {
+    setName(null);
+    localStorage.setItem("username", null);
+  };
+
+  const handleEditFocus = () => {
+    setMainFocus(null);
+    localStorage.setItem("focus", null);
   };
 
   return (
@@ -37,6 +47,16 @@ export const MainApp = () => {
       </div>
       <Weather />
       <Quotes />
+      {name !== null && (
+        <button className="btn btn-name" onClick={handleEditName}>
+          Edit Name
+        </button>
+      )}
+      {mainFocus !== null && (
+        <button className="btn btn-focus" onClick={handleEditFocus}>
+          Edit Focus |
+        </button>
+      )}
     </div>
   );
 };
