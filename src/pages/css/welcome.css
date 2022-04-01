@@ -7,16 +7,14 @@
 }
 
 .welcome-message {
-  color: #ffffff;
   font-size: 5rem;
 }
 
 .form-input {
-  color: #ffffff;
   font-size: 4rem;
   text-align: center;
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid white;
 }
