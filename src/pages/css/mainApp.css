@@ -21,3 +21,28 @@
   right: 20px;
   top: 20px;
 }
+
+.btn {
+  position: fixed;
+  bottom: 10px;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: #ffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.btn-name {
+  right: 10px;
+}
+
+.btn-focus {
+  right: 90px;
+}
+
+.btn:hover {
+  color: cadetblue;
+}
