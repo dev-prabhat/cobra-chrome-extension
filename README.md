@@ -13,7 +13,7 @@ Features :
 - Quotes changing on every refresh
 - Add your main focus of the day.
 - Add/delete items to todo list
-- TODO : Publish on chrome webstore
+- TODO : Publish on Chrome WebStore
 
 ## Try out the extension without installing locally
 
@@ -27,11 +27,9 @@ This extension will be available on chrome web store in a while.
 
 Till then if you want to try it out follow the below steps :
 
-- Download the build folder from [here](https://drive.google.com/drive/folders/1CK17bRej33XGwQ6MeUaNqCvSXI6x2VQB)
-- Extract the downloaded file.
-- Open chrome in the address bar type `chrome://extensions/`
+- Download and extract the [CobraNewTabExtension.zip](https://drive.google.com/drive/folders/1CK17bRej33XGwQ6MeUaNqCvSXI6x2VQB)
+- Open Google Chrome and in the address bar type `chrome://extensions/`
 - Toggle the `Developer mode` from the top right corner
 - Click on `Load Unpacked`
-- Navigate to the build folder inside the extracted zip.
-  (Note: The build folder is not the extracted zip folder. The build folder is inside the extracted zip folder and it contains mainfest.json and some other files.)
+- Navigate to the extracted folder. This folder will have a **manifest.json** file
 - Open New Tab and you shall be greeted with the extension asking your name.
