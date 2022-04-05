@@ -2,7 +2,7 @@
 
 An extension to personalize New Tab experience
 
----
+## ![Cobra new tab extension gif](./showcase.gif)
 
 Features :
 
@@ -12,6 +12,7 @@ Features :
 - Wallpaper from [Unsplash API](https://api.unsplash.com/) changing on every refresh
 - Quotes changing on every refresh
 - Add your main focus of the day.
+- Add/delete items to todo list
 - TODO : Publish on chrome webstore
 
 ## Try out the extension without installing locally
