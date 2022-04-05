@@ -1,5 +1,5 @@
 import "./css/mainApp.css";
-import { Clock, Greeting, Quotes, Weather } from "../components";
+import { Clock, Greeting, Quotes, Todo, Weather } from "../components";
 import { useGlobal } from "../context/global-context";
 
 export const MainApp = () => {
@@ -47,6 +47,7 @@ export const MainApp = () => {
       </div>
       <Weather />
       <Quotes />
+      <Todo />
       {name !== null && (
         <button className="btn btn-name" onClick={handleEditName}>
           Edit Name
