@@ -1,10 +1,14 @@
+<div align="center">
+  
 # Cobra New Tab Extension
 
 An extension to personalize New Tab experience
+  
+</div>
 
 ## ![Cobra new tab extension gif](./showcase.gif)
 
-Features :
+## 🚀 Features
 
 - A good user onboarding
 - Display time in 24hr format.
@@ -15,13 +19,13 @@ Features :
 - Add/delete items to todo list
 - TODO : Publish on Chrome WebStore
 
-## Try out the extension without installing locally
+## ✨ Try out the extension without installing locally
 
 Want to have personalized New Tab experience without installing the extension?
 
 It's simple, just [click here](https://cobra-chrome-extension.netlify.app/)
 
-## Instruction to run the app locally
+## 🔌 Instructions to run the app locally
 
 This extension will be available on chrome web store in a while.
 
@@ -31,5 +35,5 @@ Till then if you want to try it out follow the below steps :
 - Open Google Chrome and in the address bar type `chrome://extensions/`
 - Toggle the `Developer mode` from the top right corner
 - Click on `Load Unpacked`
-- Navigate to the extracted folder. This folder will have a **manifest.json** file
-- Open New Tab and you shall be greeted with the extension asking your name.
+- Open to the extracted folder.
+- Open New Tab and you will be greeted with the extension asking your name.
