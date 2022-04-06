@@ -1,0 +1,64 @@
+.todo-wrapper {
+  backdrop-filter: blur(10px);
+  position: absolute;
+  right: 10px;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 18ch;
+  max-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.todo-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.list-display {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.list-display::-webkit-scrollbar {
+  display: none;
+}
+
+.list-display label {
+  cursor: pointer;
+  max-width: 15ch;
+  overflow-wrap: break-word;
+}
+
+.list-display input {
+  --size: 1.75rem;
+  width: var(--size);
+  height: var(--size);
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.delete-completed-btn {
+  background: black;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: max-content;
+  margin: auto;
+}
