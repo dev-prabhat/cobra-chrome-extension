@@ -8,7 +8,8 @@ export const Todo = () => {
   );
 
   const addTodo = () => {
-    setTodoList((x) => [...x, { todo: input, checked: false }]);
+    todoList.findIndex((item) => item.todo === input) === -1 &&
+      setTodoList((x) => [...x, { todo: input, checked: false }]);
     setInput("");
   };
 
@@ -51,18 +52,20 @@ export const Todo = () => {
             <input
               type="checkbox"
               checked={item.checked}
-              onClick={() => toggleChecked(item)}
+              onChange={() => toggleChecked(item)}
             />
             {item.todo}
           </label>
         ))}
       </div>
-      <button
-        className="delete-completed-btn"
-        onClick={() => deleteCheckedTodo()}
-      >
-        Deleted Completed
-      </button>
+      {todoList.length > 0 && (
+        <button
+          className="delete-completed-btn"
+          onClick={() => deleteCheckedTodo()}
+        >
+          Delete Completed
+        </button>
+      )}
     </div>
   );
 };
