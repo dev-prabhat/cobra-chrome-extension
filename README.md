@@ -3,10 +3,10 @@
 # Cobra New Tab Extension
 
 An extension to personalize New Tab experience
-  
+
 </div>
 
-## ![Cobra new tab extension gif](./showcase.gif)
+## ![](./showcase.gif)
 
 ## 🚀 Features
 
