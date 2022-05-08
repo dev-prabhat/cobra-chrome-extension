@@ -40,7 +40,7 @@
 
 .list-display label {
   cursor: pointer;
-  max-width: 15ch;
+  font-size: 2.25rem;
   overflow-wrap: break-word;
 }
 

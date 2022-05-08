@@ -8,3 +8,18 @@
   justify-content: center;
   align-items: center;
 }
+
+.city-search {
+  display: block;
+  font-size: 1.75rem;
+  width: 15rem;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+.city-search::placeholder {
+  color: white;
+}

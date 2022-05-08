@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 export const Weather = () => {
   const [coordinates, setCoordinates] = useState({ latitude: 0, longitude: 0 });
   const [weatherData, setWeatherData] = useState(null);
+  const [city, setCity] = useState(localStorage.getItem("city"));
+  const [isInputVisible, setIsInputVisible] = useState(false);
+  useEffect(() => city !== null && localStorage.setItem("city", city), [city]);
   useEffect(
     () =>
       navigator.geolocation.getCurrentPosition((x) =>
@@ -19,7 +22,11 @@ export const Weather = () => {
     () =>
       coordinates.latitude !== 0 &&
       fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.latitude}&lon=${coordinates.longitude}&APPID=${process.env.REACT_APP_OPENWEATHER_API_KEY}`
+        `https://api.openweathermap.org/data/2.5/weather?${
+          city !== null
+            ? `q=${city}`
+            : `lat=${coordinates.latitude}&lon=${coordinates.longitude}`
+        }&APPID=${process.env.REACT_APP_OPENWEATHER_API_KEY}`
       )
         .then((res) => res.json())
         .then((x) =>
@@ -36,10 +43,15 @@ export const Weather = () => {
             wind: x.wind.speed,
           })
         ),
-    [coordinates]
+    [coordinates, city]
   );
+
   return (
-    <div className="weather-wrapper">
+    <div
+      className="weather-wrapper"
+      onMouseEnter={() => setIsInputVisible(true)}
+      onMouseLeave={() => setIsInputVisible(false)}
+    >
       {weatherData !== null && (
         <>
           <div className="temp-wrapper">
@@ -51,6 +63,14 @@ export const Weather = () => {
             />
             {weatherData.temperature}°C
           </div>
+          {isInputVisible && (
+            <input
+              type="text"
+              className="city-search"
+              placeholder="Enter city name"
+              onKeyDown={(e) => e.code === "Enter" && setCity(e.target.value)}
+            />
+          )}
           {weatherData.location}
         </>
       )}

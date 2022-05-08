@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Cobra Chrome Extension",
+  "name": "Cobra Tabs",
   "author": "Sudip Kundu",
   "version": "1.0",
-  "description": "My own version of momentum extension",
+  "description": "Personalize your new tab experience",
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
