@@ -32,7 +32,7 @@ It's simple, just [click here](https://cobra-tabs.netlify.app/)
 
 ## 🔌 Instructions to run the app locally
 
-- Download and extract the [CobraNewTabExtension.zip](https://drive.google.com/drive/folders/1CK17bRej33XGwQ6MeUaNqCvSXI6x2VQB)
+- Download and extract the [CobraTabs.zip](https://drive.google.com/drive/folders/1CK17bRej33XGwQ6MeUaNqCvSXI6x2VQB)
 - Open Google Chrome and in the address bar type `chrome://extensions/`
 - Toggle the `Developer mode` from the top right corner
 - Click on `Load Unpacked`
