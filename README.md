@@ -1,8 +1,12 @@
+# [![Netlify Status](https://api.netlify.com/api/v1/badges/a10258ca-1cff-4991-b507-16efd50fbe36/deploy-status)](https://app.netlify.com/sites/cobra-tabs/deploys)
+
 <div align="center">
   
-# Cobra New Tab Extension
+<img alt="logo" src="public\logo.png" />
 
-## An extension to personalize New Tab experience
+# [Cobra Tabs](https://chrome.google.com/webstore/detail/cobra-tabs/jghgbgogbpnhgobhdlkdbkocahgllpll/)
+
+## A chrome extension to personalize New Tab experience
 
 </div>
 
@@ -10,31 +14,27 @@
 
 <div align="center">
 
-# [Add to chrome](https://chrome.google.com/webstore/detail/cobra-tabs/jghgbgogbpnhgobhdlkdbkocahgllpll/)
-
 </div>
+
+---
 
 ## 🚀 Features
 
 - A good user onboarding
-- Display time in 24hr format.
+- Display time in 24hr format
 - current weather in sync from [OpenWeather API](https://openweathermap.org/)
+- Add your city by hovering over the weather icon.
 - Wallpaper from [Unsplash API](https://api.unsplash.com/) changing on every refresh
 - Quotes changing on every refresh
-- Add your main focus of the day.
+- Add your main focus of the day
 - Add/delete items to todo list
 
-## ✨ Try out the extension without installing locally
+---
 
-Want to have personalized New Tab experience without installing the extension?
+## ✨ Want to try out the extension before installing?
 
-It's simple, just [click here](https://cobra-tabs.netlify.app/)
+- ### It's simple, just [click here](https://cobra-tabs.netlify.app/)
 
-## 🔌 Instructions to run the app locally
+---
 
-- Download and extract the [CobraTabs.zip](https://drive.google.com/drive/folders/1CK17bRej33XGwQ6MeUaNqCvSXI6x2VQB)
-- Open Google Chrome and in the address bar type `chrome://extensions/`
-- Toggle the `Developer mode` from the top right corner
-- Click on `Load Unpacked`
-- Open to the extracted folder.
-- Open New Tab and you will be greeted with the extension asking your name.
+Learning and growing with [@neogcamp](https://github.com/neogcamp)
